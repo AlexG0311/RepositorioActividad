@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PruebaGit.MainPage">
+
+    <StackLayout>
+
+
+    <StackLayout Padding="30">
+        <Label Text="Welcome to MAUI .NET App" 
+               FontSize="24" 
+               HorizontalOptions="Center" 
+               VerticalOptions="StartAndExpand"/>
+
+        <!-- Botón inicial -->
+        <Button Text="Press Me!" 
+                Clicked="OnButtonClicked" 
+                HorizontalOptions="Center" 
+                VerticalOptions="CenterAndExpand"/>
+
+        <!-- Sección donde los colaboradores pueden agregar más botones -->
+        <StackLayout x:Name="ButtonsContainer">
+            <!-- Aquí los colaboradores pueden añadir sus botones -->
+        </StackLayout>
+        
+        <Button Text="New Button from Collaborator"
+        Clicked="OnNewButtonClicked"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"/>
+
+        <Button Text="Go to New Page"
+        Clicked="OnNavigateButtonClicked"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"/>
+        
+        <Button Text="Change Background Color"
+        Clicked="OnChangeColorButtonClicked"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"/>
+
+        <Button Text="Open Website"
+        Clicked="OnOpenWebsiteButtonClicked"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand"/>
+
+
+
+    </StackLayout>
+    </StackLayout>
+</ContentPage>

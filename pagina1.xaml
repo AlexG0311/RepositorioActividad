@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PruebaGit.pagina1"
+             Title="pagina1">
+    <StackLayout Padding="30">
+        <Label Text="Image Carousel" 
+               FontSize="24" 
+               HorizontalOptions="Center" 
+               VerticalOptions="StartAndExpand"/>
+
+        <!-- Carrusel de imágenes -->
+        <CarouselView x:Name="ImageCarousel" HeightRequest="300">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding}" Aspect="AspectFill" />
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+        
+        
+        
+        
+        
+        
+    </StackLayout>
+</ContentPage>
